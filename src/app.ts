@@ -1,9 +1,13 @@
 import express from 'express';
+import alvController from './controllers/alv.controller';
+import productsController from './controllers/products.controller';
 
 const app = express();
 
 app.use(express.json());
 
-export default app;
+app.get('/', alvController.testeAlv);
 
-// Iniciando o Projeto
+app.post('/products', productsController.createProduct);
+
+export default app;
