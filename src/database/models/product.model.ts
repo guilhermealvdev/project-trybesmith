@@ -3,7 +3,7 @@ import db from './index';
 import { Product } from '../../types/Product';
 import User from './user.model';
 
-export type ProductInputtableTypes = Optional<Product, 'id'>;
+export type ProductInputtableTypes = Optional<Product, 'id'>; // Tipo criado com o tipo 'Optional' que diz que todos campos sao opcionais menos o 'id'
 type ProductSequelizeModelCreator = ModelDefined<Product, ProductInputtableTypes>;
 export type ProductSequelizeModel = Model<Product, ProductInputtableTypes>;
 
