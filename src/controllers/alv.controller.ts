@@ -2,6 +2,6 @@
 
 import { Request, Response } from 'express';
 
-const testeAlv = async (req: Request, res: Response) => res.status(200).json({ message: 'Alv001' });
+const testeAlv = async (req: Request, res: Response) => res.status(200).json({ message: 'Alv2' });
 
 export default { testeAlv };
